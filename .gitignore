@@ -1,0 +1,10 @@
+*.tmp
+*.drawio
+*.docx
+*.pdf
+recursos.txt
+recursos/
+.DS_Store
+venv/
+packages/
+.vs/

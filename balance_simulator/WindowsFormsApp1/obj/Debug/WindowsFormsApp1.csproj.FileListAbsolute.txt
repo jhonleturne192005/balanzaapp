@@ -1,0 +1,16 @@
+C:\Users\USUARIO\Desktop\prueba\balance_simulator\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\USUARIO\Desktop\prueba\balance_simulator\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\USUARIO\Desktop\prueba\balance_simulator\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\USUARIO\Desktop\prueba\balance_simulator\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\USUARIO\Desktop\prueba\balance_simulator\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\USUARIO\Desktop\prueba\balance_simulator\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\USUARIO\Desktop\prueba\balance_simulator\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\USUARIO\Desktop\prueba\balance_simulator\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\Desktop\prueba\balance_simulator\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\USUARIO\Desktop\prueba\balance_simulator\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\USUARIO\Desktop\prueba\balance_simulator\WindowsFormsApp1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\USUARIO\Desktop\prueba\balance_simulator\WindowsFormsApp1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\USUARIO\Desktop\prueba\balance_simulator\WindowsFormsApp1\obj\Debug\WindowsF.A1EEDF9B.Up2Date
+C:\Users\USUARIO\Desktop\prueba\balance_simulator\WindowsFormsApp1\bin\Debug\MimeTypesMap.dll
+C:\Users\USUARIO\Desktop\prueba\balance_simulator\WindowsFormsApp1\bin\Debug\SimpleHTTP.dll
+C:\Users\USUARIO\Desktop\prueba\balance_simulator\WindowsFormsApp1\bin\Debug\SimpleHTTP.xml

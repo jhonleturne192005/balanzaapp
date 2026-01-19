@@ -1,0 +1,4 @@
+#psycopg2==2.9.11
+Flask==3.1.2
+SQLAlchemy==2.0.45
+SQLAlchemy-Utils==0.42.1

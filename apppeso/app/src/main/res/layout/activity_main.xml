@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#FFF">
+
+    <TextView
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Balanza"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/txtstate"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estado: Cerrado"
+        android:textStyle="bold"
+        android:textSize="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+    </TextView>
+
+    <Button
+        android:id="@+id/btn_tara"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tara"
+        android:textColor="#fff"
+        android:backgroundTint="@color/botones">
+    </Button>
+
+    <Button
+        android:id="@+id/btn_conectarws"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conectar WS"
+        android:textColor="#fff"
+        android:backgroundTint="@color/botones">
+    </Button>
+
+
+    <TextView
+        android:id="@+id/kgpesobruto"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PESO BRUTO: 888 KG"
+        app:layout_constraintBottom_toTopOf="@+id/kgtara"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+       />
+
+    <TextView
+        android:id="@+id/kgtara"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TARA: 888 KG"
+        app:layout_constraintBottom_toTopOf="@+id/kgprinc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/kgprinc"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="888 KG"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_aum"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toBottomOf="@+id/kgprinc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/btn_des"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/botones"
+        app:fabCustomSize="60dp"
+        android:src="@drawable/outline_add_24"
+        >
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_des"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toBottomOf="@+id/kgprinc"
+        app:layout_constraintStart_toStartOf="@+id/btn_aum"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/botones"
+        app:fabCustomSize="60dp"
+        android:src="@drawable/outline_des"
+        >
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
