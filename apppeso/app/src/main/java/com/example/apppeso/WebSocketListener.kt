@@ -6,6 +6,7 @@ import com.example.apppeso.data_response.pesos_response
 import com.google.gson.Gson
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import okhttp3.Response
 import okhttp3.WebSocket
@@ -47,7 +48,10 @@ class WebSocketListener : WebSocketListener()
             CoroutineScope(Dispatchers.Main).launch {
                 try {
                     function_change_data(pp);
+                    function_state_websocket("Pesando");
+                    delay(10000)
                     function_state_websocket("Activo");
+
                 }
                 catch (ex:Exception){
                     Log.i("PieSocket",ex.message.toString());

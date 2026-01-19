@@ -66,16 +66,14 @@ namespace WindowsFormsApp1
 
         public static async Task sendMessageSocket(String dataUser)
         {
-            try {
-                byte[] buffer = new byte[1024];
-                byte[] bufferDat = Encoding.UTF8.GetBytes(dataUser.ToCharArray());
-                await socketss.SendAsync(new ArraySegment<byte>(bufferDat), WebSocketMessageType.Text, true, CancellationToken.None);
-            }
-            catch(Exception ex)
+            if (socketss == null)
             {
                 Console.WriteLine("No existe referencia de conexion de WebSocket....");
-                Console.WriteLine(ex.Message);
+                return;
             }
+            byte[] buffer = new byte[1024];
+            byte[] bufferDat = Encoding.UTF8.GetBytes(dataUser.ToCharArray());
+            await socketss.SendAsync(new ArraySegment<byte>(bufferDat), WebSocketMessageType.Text, true, CancellationToken.None);
         }
 
 

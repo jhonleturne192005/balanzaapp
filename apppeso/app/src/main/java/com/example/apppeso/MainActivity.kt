@@ -2,6 +2,7 @@ package com.example.apppeso
 
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -13,6 +14,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import com.example.apppeso.data_response.pesos_model
 import com.example.apppeso.databinding.ActivityMainBinding
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.withContext
 import okhttp3.OkHttpClient
 import kotlin.random.Random
@@ -22,6 +24,8 @@ import okhttp3.WebSocket
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+    private var state_current: String="Cerrado"
+    private var state_view: Boolean =true;
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -104,6 +108,19 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
+
+        binding.btnActive.setOnClickListener {
+            if(state_view){
+                state_view=false;
+                binding.btnAum.visibility= View.GONE;
+                binding.btnDes.visibility= View.GONE;
+            }else{
+                state_view=true;
+                binding.btnAum.visibility= View.VISIBLE;
+                binding.btnDes.visibility= View.VISIBLE;
+            }
+        }
+
     }
 
     suspend fun message_action()
@@ -125,6 +142,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun change_state(state:String){
+        state_current=state;
         binding.txtstate.text="Estado: "+state;
     }
 

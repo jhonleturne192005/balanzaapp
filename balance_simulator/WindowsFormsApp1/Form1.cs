@@ -103,7 +103,10 @@ namespace WindowsFormsApp1
             lblPesoBrutoDat.Text = peso_bruto+" KG";
             lblPesoTaraDat.Text = peso_tara+ " KG";
 
-            Task.Run(() => csWebSocket.sendMessageSocket(joc.createJson(peso_actual.ToString(), peso_bruto.ToString(), peso_tara.ToString())));
+            Task.Run(() =>
+            {
+                csWebSocket.sendMessageSocket(joc.createJson(peso_actual.ToString(), peso_bruto.ToString(), peso_tara.ToString()));
+            });
         }
 
 
